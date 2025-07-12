@@ -1,30 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> My Profile </title>
+    <title>پروفایل من</title>
     <meta charset="UTF-8">
-    <!-- دکمه با انیمیشن موجی -->
-<button class="wave-btn">کلیک کنید</button>
-<style>
-.wave-btn {
-  background: #4CAF50;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
-}
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* استایل جدید برای بک‌گراند */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://example.com/your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+        /* استایل محتوای اصلی (متن و دکمه‌ها) */
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* پس‌زمینه نیمه شفاف برای خوانایی بهتر */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        
+        .button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            max-width: 200px;
+        }
+        
+        .telegram { background: #0088CC; }
+        .instagram { background: #E1306C; }
+        .whatsapp { background: #25D366; }
+        .phone { background: #6C757D; }
+    </style>
 </head>
 <body>
-    <h1> </h1>
-    <p> DJ Reziz </p>
-    <img src="https://i.postimg.cc/cCPZX5jJ/IMG-20250712-141631-599.jpg" alt="عکس پروفایل" class="profile-img">
-    
-    <a href="tg://resolve?domain=djreziz" class="button telegram"> Telegram </a>
-    <a href="https://www.instagram.com/djreziz/`" class="button instagram"> Instagram </a>
-    <a href="https://wa.me/0912 248 46 07" class="button whatsapp"> WhatsApp </a>
-    <a href="tel:0912 248 46 07" class="button phone"> Call </a>
+    <div class="content">
+        <h1>نام شما</h1>
+        <p>لقب یا توضیح کوتاه</p>
+        <img src="https://example.com/your-profile-image.jpg" alt="عکس پروفایل" class="profile-img">
+        
+        <a href="tg://resolve?domain=USERNAME" class="button telegram">تلگرام</a>
+        <a href="instagram://user?username=USERNAME" class="button instagram">اینستاگرام</a>
+        <a href="https://wa.me/989123456789" class="button whatsapp">واتساپ</a>
+        <a href="tel:09123456789" class="button phone">تماس</a>
+    </div>
 </body>
 </html>
